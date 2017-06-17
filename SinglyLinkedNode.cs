@@ -33,15 +33,20 @@ namespace V_SinglyLinkedList
             SinglyLinkedNode<T> node = new SinglyLinkedNode<T>(itemToStore);
             node.Next = Next;
             Next = node;
+
             return node;
         }
 
-
+        /// <summary>
+        /// Pop the next node
+        /// </summary>`
+        /// <returns>Node removed</returns>
         public SinglyLinkedNode<T> RemoveAfter()
         {
+            SinglyLinkedNode<T> tempNode = Next;
+            Next = Next.Next;
 
-
-            return;
+            return tempNode;
         }
 
     }
