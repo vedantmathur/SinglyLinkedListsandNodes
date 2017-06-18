@@ -5,3 +5,6 @@ C:\Users\GMRInstructor\Documents\GitHub\SinglyLinkedListsandNodes\bin\Debug\V_Si
 C:\Users\GMRInstructor\Documents\GitHub\SinglyLinkedListsandNodes\obj\Debug\V_SinglyLinkedList.csprojResolveAssemblyReference.cache
 C:\Users\GMRInstructor\Documents\GitHub\SinglyLinkedListsandNodes\obj\Debug\V_SinglyLinkedList.exe
 C:\Users\GMRInstructor\Documents\GitHub\SinglyLinkedListsandNodes\obj\Debug\V_SinglyLinkedList.pdb
+C:\Users\VisitorDL8\Documents\GitHub\SinglyLinkedListsandNodes\bin\Debug\V_SinglyLinkedList.exe.config
+C:\Users\VisitorDL8\Documents\GitHub\SinglyLinkedListsandNodes\obj\Debug\V_SinglyLinkedList.exe
+C:\Users\VisitorDL8\Documents\GitHub\SinglyLinkedListsandNodes\obj\Debug\V_SinglyLinkedList.pdb

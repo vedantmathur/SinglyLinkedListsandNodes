@@ -8,22 +8,54 @@ namespace V_SinglyLinkedList
 {
     class SinglyLinkedList<T>
     {
+        SinglyLinkedNode<T> head;
 
         public SinglyLinkedList()
         {
-
+            head = null;
 
         }
 
-        void AddtoEnd (T value)
+        void AddtoEnd(T value)
         {
+            SinglyLinkedNode<T> nodeToSee = head;
+
+            if (head == null)
+            {
+                head = new SinglyLinkedNode<T>(value);
+            }
+            else
+            {
+                while (nodeToSee.Next != null)
+                {
+                    nodeToSee = nodeToSee.Next;
+                }
+                nodeToSee.Next = new SinglyLinkedNode<T>(value);
+            }
 
         }
 
-        void AddtoFront (T value)
+        void AddtoFront(T value)
         {
-
+            SinglyLinkedNode<T> tempNode = new SinglyLinkedNode<T>(value);
+            tempNode.Next = head;
+            head = tempNode;
         }
+
+        bool RemoveFromFront()
+        {
+            if (head == null)
+            {
+                return false;
+            }
+            else
+            {
+                head = head.Next;
+                return true;
+            }
+        }
+
+
 
 
         // SinglyLinkedList()	Create an empty singly linked list
