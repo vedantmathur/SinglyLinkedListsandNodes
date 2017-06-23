@@ -79,7 +79,17 @@ namespace V_SinglyLinkedList
             return true;  
         }
 
-
+        bool IsEmpty()
+        {
+            if (head == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
         // SinglyLinkedList()	Create an empty singly linked list
