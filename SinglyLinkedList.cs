@@ -55,6 +55,30 @@ namespace V_SinglyLinkedList
             }
         }
 
+        bool RemoveFromEnd()
+        {
+            SinglyLinkedNode<T> nodeToSee = head;
+            if(head == null)
+            {
+                return false;
+            }
+            while(true)
+            {
+                if (nodeToSee.Next != null)
+                {
+                    nodeToSee = nodeToSee.Next;
+                }
+                else
+                {
+                    nodeToSee = null;
+                    break;
+                }
+            }
+
+
+            return true;  
+        }
+
 
 
 
