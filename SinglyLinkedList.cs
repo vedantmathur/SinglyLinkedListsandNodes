@@ -79,6 +79,19 @@ namespace V_SinglyLinkedList
             return true;  
         }
 
+        public int Count()
+        {
+            SinglyLinkedNode<T> nodeToSee = head;
+            int count = 0;
+            while (nodeToSee != null)
+            {
+                count++;
+                nodeToSee = nodeToSee.Next;
+            }
+
+            return count;
+        }
+
 
 
 
