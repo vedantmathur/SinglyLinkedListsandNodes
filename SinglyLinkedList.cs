@@ -79,21 +79,21 @@ namespace V_SinglyLinkedList
             return true;  
         }
 
+        
         bool RemoveAt(int position)
         {
             SinglyLinkedNode<T> nodeToSee = head;
             int index = 0;
-            while (nodeToSee.Next != null)
+            while (true)
             {
-                if(nodeToSee.Next.Next == null)
+                if(index == position)
                 {
                     nodeToSee.Next = null;
                     return true;
                 }
                 nodeToSee = nodeToSee.Next;
+                index++;
             }
-
-            return true;
         }
 
         public int Count()
