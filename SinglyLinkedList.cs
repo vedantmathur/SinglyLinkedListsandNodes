@@ -28,7 +28,7 @@ namespace V_SinglyLinkedList
             {
                 while (nodeToSee.Next != null)
                 {
-                    nodeToSee = nodeToSee.Next;
+                    nodeToSee = nodeToSee.Next; 
                 }
                 nodeToSee.Next = new SinglyLinkedNode<T>(value);
             }
@@ -77,6 +77,23 @@ namespace V_SinglyLinkedList
 
 
             return true;  
+        }
+
+        bool RemoveAt(int position)
+        {
+            SinglyLinkedNode<T> nodeToSee = head;
+            int index = 0;
+            while (nodeToSee.Next != null)
+            {
+                if(nodeToSee.Next.Next == null)
+                {
+                    nodeToSee.Next = null;
+                    return true;
+                }
+                nodeToSee = nodeToSee.Next;
+            }
+
+            return true;
         }
 
         public int Count()
