@@ -91,6 +91,22 @@ namespace V_SinglyLinkedList
             }
         }
 
+		public override string ToString()
+		{
+			string returnedString = "";
+            SinglyLinkedNode<T> nodeToSee = head;
+
+            while(nodeToSee != null)
+            {
+                returnedString += nodeToSee.Item;
+                returnedString += " ";
+                nodeToSee = nodeToSee.Next;
+            }
+
+            return returnedString;
+
+		}
+
 
         // SinglyLinkedList()	Create an empty singly linked list
 
