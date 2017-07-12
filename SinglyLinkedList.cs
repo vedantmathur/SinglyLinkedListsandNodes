@@ -28,7 +28,7 @@ namespace V_SinglyLinkedList
             {
                 while (nodeToSee.Next != null)
                 {
-                    nodeToSee = nodeToSee.Next;
+                    nodeToSee = nodeToSee.Next; 
                 }
                 nodeToSee.Next = new SinglyLinkedNode<T>(value);
             }
@@ -79,6 +79,7 @@ namespace V_SinglyLinkedList
             return true;  
         }
 
+<<<<<<< HEAD
         bool IsEmpty()
         {
             if (head == null)
@@ -104,6 +105,38 @@ namespace V_SinglyLinkedList
             }
 
             return returnedString;
+=======
+        
+        bool RemoveAt(int position)
+        {
+            SinglyLinkedNode<T> nodeToSee = head;
+            int index = 0;
+            while (true)
+            {
+                if(index == position)
+                {
+                    nodeToSee.Next = null;
+                    return true;
+                }
+                nodeToSee = nodeToSee.Next;
+                index++;
+            }
+        }
+
+        public int Count()
+        {
+            SinglyLinkedNode<T> nodeToSee = head;
+            int count = 0;
+            while (nodeToSee != null)
+            {
+                count++;
+                nodeToSee = nodeToSee.Next;
+            }
+
+            return count;
+        }
+
+>>>>>>> origin/master
 
 		}
 
