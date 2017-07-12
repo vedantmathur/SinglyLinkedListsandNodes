@@ -9,12 +9,19 @@ namespace V_SinglyLinkedList
     {
         static void Main(string[] args)
         {
-            LinkedList<int> list = new LinkedList<int>();
+            SinglyLinkedList<int> list = new SinglyLinkedList<int>();
 
-            foreach(var item in list)
+            a.AddtoEnd(55);
+            a.AddtoEnd(22);
+            a.AddtoEnd(11);
+
+            /*foreach(var item in a)
             {
-
-            }    
+                Console.WriteLine(a);
+            } */
+            Console.WriteLine(a);
+            Console.WriteLine("eh?");
+            Console.ReadKey();
         }
 
         public IEnumerator<int> GetListEnumerator(LinkedList<int> list)
