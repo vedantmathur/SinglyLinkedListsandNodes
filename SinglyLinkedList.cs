@@ -16,7 +16,7 @@ namespace V_SinglyLinkedList
 
         }
 
-        void AddtoEnd(T value)
+        public void AddtoEnd(T value)
         {
             SinglyLinkedNode<T> nodeToSee = head;
 
