@@ -8,10 +8,9 @@ C:/Users/GMRInstructor/Documents/GitHub/SinglyLinkedListsandNodes/obj/Debug/V_Si
 C:/Users/VisitorDL8/Documents/GitHub/SinglyLinkedListsandNodes/bin/Debug/V_SinglyLinkedList.exe.config
 C:/Users/VisitorDL8/Documents/GitHub/SinglyLinkedListsandNodes/obj/Debug/V_SinglyLinkedList.exe
 C:/Users/VisitorDL8/Documents/GitHub/SinglyLinkedListsandNodes/obj/Debug/V_SinglyLinkedList.pdb
-/Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/obj/Debug/V_SinglyLinkedList.csprojResolveAssemblyReference.cache
-/Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/obj/Debug/V_SinglyLinkedList.csproj.CoreCompileInputs.cache
-/Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/obj/Debug/V_SinglyLinkedList.exe
-/Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/obj/Debug/V_SinglyLinkedList.pdb
 /Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/bin/Debug/V_SinglyLinkedList.exe.config
 /Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/bin/Debug/V_SinglyLinkedList.exe
 /Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/bin/Debug/V_SinglyLinkedList.pdb
+/Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/obj/Debug/V_SinglyLinkedList.csproj.CoreCompileInputs.cache
+/Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/obj/Debug/V_SinglyLinkedList.exe
+/Users/vedantmathur/Code/C#/SinglyLinkedListsandNodes/obj/Debug/V_SinglyLinkedList.pdb

@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,15 +11,15 @@ namespace V_SinglyLinkedList
         {
             SinglyLinkedList<int> list = new SinglyLinkedList<int>();
 
-            a.AddtoEnd(55);
-            a.AddtoEnd(22);
-            a.AddtoEnd(11);
+            list.AddtoEnd(55);
+            list.AddtoEnd(22);
+            list.AddtoEnd(11);
 
             /*foreach(var item in a)
             {
                 Console.WriteLine(a);
             } */
-            Console.WriteLine(a);
+            Console.WriteLine(list);
             Console.WriteLine("eh?");
             Console.ReadKey();
         }

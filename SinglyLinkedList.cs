@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,7 +28,7 @@ namespace V_SinglyLinkedList
             {
                 while (nodeToSee.Next != null)
                 {
-                    nodeToSee = nodeToSee.Next; 
+                    nodeToSee = nodeToSee.Next;
                 }
                 nodeToSee.Next = new SinglyLinkedNode<T>(value);
             }
@@ -58,11 +58,11 @@ namespace V_SinglyLinkedList
         bool RemoveFromEnd()
         {
             SinglyLinkedNode<T> nodeToSee = head;
-            if(head == null)
+            if (head == null)
             {
                 return false;
             }
-            while(true)
+            while (true)
             {
                 if (nodeToSee.Next != null)
                 {
@@ -76,10 +76,9 @@ namespace V_SinglyLinkedList
             }
 
 
-            return true;  
+            return true;
         }
 
-<<<<<<< HEAD
         bool IsEmpty()
         {
             if (head == null)
@@ -92,12 +91,12 @@ namespace V_SinglyLinkedList
             }
         }
 
-		public override string ToString()
-		{
-			string returnedString = "";
+        public override string ToString()
+        {
+            string returnedString = "";
             SinglyLinkedNode<T> nodeToSee = head;
 
-            while(nodeToSee != null)
+            while (nodeToSee != null)
             {
                 returnedString += nodeToSee.Item;
                 returnedString += " ";
@@ -105,15 +104,15 @@ namespace V_SinglyLinkedList
             }
 
             return returnedString;
-=======
-        
+        }
+
         bool RemoveAt(int position)
         {
             SinglyLinkedNode<T> nodeToSee = head;
             int index = 0;
             while (true)
             {
-                if(index == position)
+                if (index == position)
                 {
                     nodeToSee.Next = null;
                     return true;
@@ -136,9 +135,8 @@ namespace V_SinglyLinkedList
             return count;
         }
 
->>>>>>> origin/master
-
-		}
+    }
+}
 
 
         // SinglyLinkedList()	Create an empty singly linked list
@@ -158,8 +156,3 @@ namespace V_SinglyLinkedList
         // string ToString()	Return the values of the nodes
 
         // int	Count	Return the number of nodes in the list
-
-
-
-    }
-}
