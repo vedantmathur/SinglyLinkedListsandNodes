@@ -15,47 +15,13 @@ namespace V_SinglyLinkedList
             list.AddtoEnd(22);
             list.AddtoEnd(11);
 
-            /*foreach(var item in a)
-            {
-                Console.WriteLine(a);
-            } */
-            Console.WriteLine(list);
+            Console.WriteLine(list.ToString());
             Console.WriteLine("eh?");
+            Console.WriteLine(list.Count());
+            list.RemoveAt(0);
+            Console.WriteLine(list.ToString());
             Console.ReadKey();
         }
 
-        public IEnumerator<int> GetListEnumerator(LinkedList<int> list)
-        {
-            var current = list.First;
-            if (current == null)
-            {
-                yield break;
-            }
-            yield return current.Value;
-            current = current.Next;
-            while (current != list.First)
-            {
-                yield return current.Value;
-                current = current.Next;
-            }
-        }
-
-        public List<int> GetTimes(LinkedList<int> list)
-        {
-            List<int> items = new List<int>();
-            var current = list.First;
-            if (current == null)
-            {
-                return items;
-            }
-            items.Add(current.Value);
-            current = current.Next;
-            while (current != list.First)
-            {
-                items.Add(current.Value);
-                current = current.Next;
-            }
-            return items;
-        }
     }
 }

@@ -35,14 +35,14 @@ namespace V_SinglyLinkedList
 
         }
 
-        void AddtoFront(T value)
+        public void AddtoFront(T value)
         {
             SinglyLinkedNode<T> tempNode = new SinglyLinkedNode<T>(value);
             tempNode.Next = head;
             head = tempNode;
         }
 
-        bool RemoveFromFront()
+        public bool RemoveFromFront()
         {
             if (head == null)
             {
@@ -55,7 +55,7 @@ namespace V_SinglyLinkedList
             }
         }
 
-        bool RemoveFromEnd()
+        public bool RemoveFromEnd()
         {
             SinglyLinkedNode<T> nodeToSee = head;
             if (head == null)
@@ -79,7 +79,7 @@ namespace V_SinglyLinkedList
             return true;
         }
 
-        bool IsEmpty()
+        public bool IsEmpty()
         {
             if (head == null)
             {
@@ -106,17 +106,24 @@ namespace V_SinglyLinkedList
             return returnedString;
         }
 
-        bool RemoveAt(int position)
+        public bool RemoveAt(int position)
         {
             SinglyLinkedNode<T> nodeToSee = head;
+            SinglyLinkedNode<T> prevNode = null;
             int index = 0;
             while (true)
             {
-                if (index == position)
+                if (index == position && index != 0)
                 {
-                    nodeToSee.Next = null;
+                    prevNode.Next = nodeToSee.Next;
                     return true;
                 }
+                if(index == position && index == 0)
+                {
+                    RemoveFromFront();
+                    return true;
+                }
+                prevNode = nodeToSee;
                 nodeToSee = nodeToSee.Next;
                 index++;
             }
